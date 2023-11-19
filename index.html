@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="top-page">
+    <div id="logo">
+        <img src="https://static.vecteezy.com/system/resources/previews/008/385/603/non_2x/behance-social-media-icon-symbol-element-illustration-free-vector.jpg" alt="Behance Logo">
+    </div>
+    <div id="nav-links">
+        <a href="#">For You</a>
+        <a href="#">Discover</a>
+        <a href="#">Hire</a>
+        <a href="#">Assets</a>
+        <a href="#">Job</a>
+    </div>
+    <div id="login-signup">
+        <button id="login">Login</button>
+        <button id="signup">Signup</button>
+    </div>
+</div>
+
+<div id="search-bar-container">
+    <input type="text" id="search-bar" placeholder="Search...">
+    <button id="search-button" onclick="searchImages()">Search</button>
+    <select id="sort-options">
+        <option value="recommended">Recommended</option>
+        <option value="curated">Curated</option>
+        <option value="most-appreciated">Most Appreciated</option>
+        <option value="most-viewed">Most Viewed</option>
+        <option value="most-discussed">Most Discussed</option>
+        <option value="most-recent">Most Recent</option>
+    </select>
+    <span id="sort-icon">&#x25b2;</span>
+</div>
+
+<div id="imageContainer"></div>
+
+<div class="lightbox" id="lightbox">
+    <button class="close-button" onclick="closeLightbox()">X</button>
+    <img src="" alt="Large Image" id="lightboxImg">
+    <div class="author-info-container">
+        <div id="lightboxImageTitle"></div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
